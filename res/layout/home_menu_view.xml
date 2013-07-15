@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" 
+    android:gravity="center">
+    <TableLayout
+        android:id="@+id/menu_view_table"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="center_horizontal" 
+        android:layout_marginBottom="29dp">
+        <TableRow 
+            android:id="@+id/menu_view_row_1"
+            android:gravity="center" 
+            android:layout_weight="1">  
+                        
+        </TableRow>
+        
+        <TableRow 
+            android:id="@+id/menu_view_row_2"
+            android:gravity="center" 
+            android:layout_weight="1">             
+        </TableRow>
+    </TableLayout>    
+    <ImageView 
+        android:id="@+id/next_pager_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_view_table"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/common_home_nextpage"
+        android:layout_marginRight="30dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+    <ImageView 
+        android:id="@+id/front_pager_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/menu_view_table"
+        android:src="@drawable/common_home_front_page"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="10dp"
+        android:scaleType="fitCenter"
+        android:visibility="gone"/>
+</RelativeLayout>

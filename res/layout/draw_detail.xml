@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/draw_detail_group"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/draw_room_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/draw_detail_header"
+        style="@style/header_bar" >
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:text="@string/draw_detail" />
+        <ImageButton
+            android:id="@+id/refresh_button"
+            style="@style/header_bar_right_button"
+            android:src="@drawable/refresh_button" />
+    </RelativeLayout>
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+        xmlns:ptr="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/draw_detail_list_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:headerDividersEnabled="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:divider="@android:color/darker_gray"
+        android:dividerHeight="1dp"
+        android:fadingEdge="none"
+        android:layout_above="@+id/draw_detail_footer_group"
+        android:layout_below="@id/draw_detail_header"
+        android:background="@android:color/white"
+        ptr:ptrAnimationStyle="flip" />
+    <FrameLayout
+        android:id="@+id/anim_group"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_above="@+id/draw_detail_footer_group"
+        android:layout_below="@id/draw_detail_header"
+        android:background="@android:color/transparent"
+        android:clickable="false"
+        android:clipToPadding="false"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:id="@+id/draw_detail_footer_group"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/draw_detail_guess"
+            style="@style/draw_detail_footer_bar_image_button"
+            android:src="@drawable/detail_guess" />
+
+        <ImageButton
+            android:id="@+id/draw_detail_comment"
+            style="@style/draw_detail_footer_bar_image_button"
+            android:src="@drawable/detail_comment" />
+
+        <ImageButton
+            android:id="@+id/draw_detail_share"
+            style="@style/draw_detail_footer_bar_image_button"
+            android:src="@drawable/detail_share" />
+
+        <ImageButton
+            android:id="@+id/draw_detail_flower"
+            style="@style/draw_detail_footer_bar_image_button"
+            android:src="@drawable/detail_flower" />
+
+        <!-- <ImageButton
+            android:id="@+id/draw_detail_tomato"
+            style="@style/draw_detail_footer_bar_image_button"
+            android:src="@drawable/detail_tomato" /> -->
+    </LinearLayout>
+
+</RelativeLayout>

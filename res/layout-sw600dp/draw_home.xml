@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <RelativeLayout 
+        android:layout_height="fill_parent"
+        android:layout_width="fill_parent"
+        android:layout_weight="3"
+        android:orientation="vertical"
+        android:layout_marginBottom="-30dp"
+        android:background="@drawable/draw_home_header_bg">
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/o"
+            android:scaleType="fitCenter"
+            android:padding="8.5dp" />
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/user_image"
+            android:textColor="@color/green"
+            android:textSize="24sp" />
+        <ImageView
+            android:id="@+id/cash_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/user_image"
+            android:src="@drawable/common_home_coin" />
+        <TextView
+            android:id="@+id/user_rich"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/cash_icon"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+        <TextView
+            android:id="@+id/user_level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/user_name"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/user_rich"
+            android:textColor="@android:color/white"
+            android:textSize="20sp" />
+    <LinearLayout
+        android:id="@+id/show_picture"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@+id/cash_icon"
+        android:background="@drawable/draw_home_banner"
+        android:orientation="vertical" >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="right"
+            android:layout_weight="3">
+            <ImageView
+		       android:id="@+id/user_recharge_imageview"
+		       android:layout_width="wrap_content"
+		       android:layout_height="wrap_content"
+		       android:src="@drawable/user_recharge_btn" />
+        </LinearLayout>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/top_draw_picture"
+            android:layout_width="500dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="22dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:background="@drawable/draw_home_displaybg"
+            android:padding="2dp" >
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+    
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/control_view_pager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_weight="2"
+        android:background="@drawable/common_home_wood_bg" />
+</LinearLayout>

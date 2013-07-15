@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:orientation="horizontal"
+    android:background="@drawable/bbs_reward_option_bg"
+    android:gravity="center_vertical"
+    >
+    <Button
+        android:id="@+id/bbs_no_reward"
+        style="@style/bbs_reward_button"
+        android:text="@string/none"
+        android:layout_marginLeft="0dip"
+        />
+    <Button
+        android:id="@+id/bbs_reward_100"
+       style="@style/bbs_reward_button"
+       android:text="@string/reward_100"/>
+    <Button
+        android:id="@+id/bbs_reward_300"
+        style="@style/bbs_reward_button"
+        android:text="@string/reward_300"/>
+    <Button
+        android:id="@+id/bbs_reward_500"
+        style="@style/bbs_reward_button"
+        android:text="@string/reward_500"/>
+    <Button
+        android:id="@+id/bbs_reward_1000"
+        style="@style/bbs_reward_button"
+        android:text="@string/reward_1000"/>
+</LinearLayout>

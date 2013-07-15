@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/draw_detail_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    <RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/draw_detail_header"
+        style="@style/header_bar" >
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+        <TextView
+            android:id="@+id/comment_title_text"
+            style="@style/header_bar_title_text_view"/>
+        <Button
+            android:id="@+id/send_button"
+            style="@style/right_yellow_button"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="@string/send"/>
+    </RelativeLayout>
+	<EditText
+	    android:id="@+id/comment_text"
+	    android:layout_width="match_parent"
+	    android:layout_height="200dp"
+	    android:layout_below="@id/draw_detail_header"
+	    android:gravity="left|top"
+	    android:inputType="text"
+	    android:layout_marginTop="10dp"
+	    android:layout_marginLeft="10dp"
+	    android:layout_marginRight="10dp">
+        </EditText>
+</RelativeLayout>

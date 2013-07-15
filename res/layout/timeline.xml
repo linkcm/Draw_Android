@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <RelativeLayout 
+    				style="@style/header_bar" >
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:text="@string/timeline_title" />
+        <ImageButton
+            android:id="@+id/refresh_button"
+            android:src="@drawable/refresh_button"
+            style="@style/header_bar_right_button" />
+	</RelativeLayout>
+    <include layout="@layout/common_header_tab"/>
+</LinearLayout>

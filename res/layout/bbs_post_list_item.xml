@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" 
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <ImageView
+        android:id="@+id/user_avatar" 
+        android:layout_width="50dip"
+        android:layout_height="50dip"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+      
+        android:background="@drawable/bbs_post_content_bg">
+        <TextView
+            android:id="@+id/user_nick_name"
+            android:layout_width="150dip"
+            android:layout_height="wrap_content"
+            android:gravity="top|left"
+            android:textSize="18sp"
+            android:singleLine="true"
+            android:layout_marginTop="4dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"/>
+        <TextView
+            android:id="@+id/bbs_post_create_time"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:gravity="top|right"
+            android:singleLine="true"
+            android:textSize="14sp"/>
+        <TextView
+            android:id="@+id/bbs_post_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dip"
+            android:maxHeight="200dip"
+            android:paddingBottom="10dip"
+            android:layout_below="@+id/user_nick_name"
+           
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:id="@+id/bbs_post_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dip"
+            android:maxHeight="60dip"
+            android:maxWidth="60dip"
+            android:layout_below="@+id/bbs_post_content"
+            />
+        <TextView
+            android:id="@+id/bbs_post_top"
+            android:layout_width="40dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:layout_below="@+id/bbs_post_image"
+            android:background="@drawable/bbs_post_top_bg"
+            android:text="@string/bbs_post_top"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/bbs_post_top"
+            android:layout_below="@+id/bbs_post_image"
+            android:layout_marginTop="5dip"
+            android:gravity="right|center_vertical"
+            android:orientation="horizontal" >
+
+            <ImageView
+                android:id="@+id/bbs_post_reward_image"
+                android:layout_width="15dip"
+                android:layout_height="15sp" />
+
+            <TextView
+                android:id="@+id/bbs_post_reward"
+                android:layout_width="50dip"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/bbs_post_support_image"
+                android:layout_width="15dip"
+                android:layout_height="15sp"
+                android:src="@drawable/bbs_post_support" />
+
+            <TextView
+                android:id="@+id/bbs_post_support_count"
+                android:layout_width="30dip"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+
+            <ImageView
+                android:id="@+id/bbs_post_comment_image"
+                android:layout_width="15dip"
+                android:layout_height="15sp"
+                android:src="@drawable/bbs_post_comment" />
+
+            <TextView
+                android:id="@+id/bbs_post_comment_count"
+                android:layout_width="30dip"
+                android:layout_height="wrap_content"
+                android:textSize="14sp" />
+        </LinearLayout>
+
+    </RelativeLayout>
+</LinearLayout>

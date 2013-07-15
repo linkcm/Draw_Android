@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="more">
+        <item>分享给好友（+10金币）</item>
+        <item>关注官方微博（+400金币）</item>
+        <item>提交新词</item>
+        <item>报告问题</item>
+        <item>反馈意见</item>
+        <item>应用推荐</item>
+        <item>版本升级</item>
+        <item>给个好评</item>
+        <item>关于我们</item>
+    </string-array>
+</resources>

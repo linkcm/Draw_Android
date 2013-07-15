@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/draw_room_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        style="@style/header_bar" >
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:text="@string/opus_title" />
+        <Button
+            android:id="@+id/clear_opus_button"
+            style="@style/header_bar_right_button"
+            android:text="@string/clear"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/header_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_bar"
+        android:layout_marginBottom="-5dp"
+        android:orientation="vertical" >
+        <RadioGroup
+            android:id="@+id/draw_home_opus_header_tab_group"
+            android:layout_width="300dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/draw_home_opus_mine_button"
+                style="@style/draw_home_top_radio_button"
+                android:background="@drawable/top_draw_left_button"
+                android:text="@string/mine" />
+            <RadioButton
+                android:id="@+id/draw_home_opus_all_button"
+                style="@style/draw_home_top_radio_button"
+                android:background="@drawable/top_draw_middle_button"
+                android:checked="true"
+                android:text="@string/all" />
+            <RadioButton
+                android:id="@+id/draw_home_opus_draft_button"
+                style="@style/draw_home_top_radio_button"
+                android:background="@drawable/top_draw_right_button"
+                android:text="@string/draft" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/draw_home_opus_mine_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                ptr:ptrAnimationStyle="flip" />
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/draw_home_opus_all_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:visibility="gone"
+                ptr:ptrAnimationStyle="flip" />
+            <com.handmark.pulltorefresh.library.PullToRefreshGridView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/draw_home_opus_draft_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:visibility="gone"
+                ptr:ptrAnimationStyle="flip" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

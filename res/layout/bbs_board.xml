@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bbs_bg">
+    <RelativeLayout
+        android:id="@+id/bbs_header"
+        style="@style/bbs_header_bar">
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/bbs_back_button" />
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:textColor="@color/white"/>
+        
+        <ImageButton
+            android:id="@+id/bbs_post_create_button"
+            style="@style/bbs_header_bar_right_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="50dip"
+            android:src="@drawable/bbs_post_edit"/>
+        
+        <ImageButton
+            android:id="@+id/bbs_post_new"
+            style="@style/bbs_header_bar_right_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dip"
+            android:src="@drawable/bbs_post_new"/>
+        <ImageButton
+            android:id="@+id/bbs_post_hot"
+            style="@style/bbs_header_bar_right_button"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="4dip"
+            android:src="@drawable/bbs_post_hot"
+            android:visibility="gone"/>
+    </RelativeLayout>
+    
+    <LinearLayout
+        android:id="@+id/bbs_board_manager_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:gravity="center_vertical">
+    </LinearLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="2dip"
+        android:layout_marginTop="4dip"
+        android:layout_marginLeft="20dip"
+        android:layout_marginRight="20dip"
+        android:src="@drawable/bbs_detail_selected_line"
+        android:scaleType="fitXY"/>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/bbs_board_post_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:dividerHeight="10dip"
+            android:divider="@null"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            ptr:ptrAnimationStyle="flip" 
+            android:listSelector="@android:color/transparent"
+            
+            />
+            
+</LinearLayout>

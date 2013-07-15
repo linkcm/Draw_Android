@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dip"
+    android:orientation="horizontal"
+    android:background="@drawable/bbs_reward_left_option_bg"
+    android:gravity="center_vertical"
+    >
+    <Button
+        android:id="@+id/bbs_reward"
+        style="@style/bbs_reward_button"
+        android:text="@string/reward"
+        android:layout_marginLeft="0dip"
+        />
+    <Button
+        android:id="@+id/bbs_comment_reply"
+       style="@style/bbs_reward_button"
+       android:text="@string/comment_reply"/>
+   
+</LinearLayout>

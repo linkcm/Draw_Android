@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World!</string>
+    <string name="app_name">Draw_Android</string>
+    <string name="message">Message</string>
+    <string name="loading">Loading...</string>
+    <string name="connecting">Connecting...</string>  
+    <string name="draw">画画</string>
+    <string name="offline_guess">猜画</string>
+    <string name="online_guess">游戏</string>
+    <string name="timeline">动态</string>
+    <string name="top">画榜</string>
+    <string name="draw_contest">比赛</string>
+    <string name="bbs">论坛</string>
+    <string name="shop">商店</string>
+    <string name="recharge">充值</string>
+    <string name="top_player">达人</string>
+    <string name="year">年度</string>
+    <string name="week">本周</string>
+    <string name="newest">最新</string>
+    <string name="timeline_title">猜画动态</string>
+    <string name="opus">作品</string>
+    <string name="draw_to_me">画给我</string>
+    <string name="comment">评论</string>
+    <string name="reply_comment">回复评论</string>
+    <string name="guess_correct">猜对了</string>
+    <string name="guess_bingo">猜中:</string>
+    <string name="guessed">猜过:</string>
+    <string name="hour">小时</string>
+    <string name="minute">分钟</string>
+    <string name="ago">前</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="level">lv:</string>
+    <string name="send">发送</string>
+    <string name="app_exit_alert">确定要退出应用？</string>
+    <string name="sure">确定</string>
+    <string name="cancel">取消</string>
+    <string name="collect">收藏</string>
+    
+    
+    <!--user detail  -->
+   
+    <string name="sns_account">社交账号</string>
+    <string name="birthday">生日:</string>
+    <string name="constellation">星座:</string>
+    <string name="blood_type">血型:</string>
+    <string name="location">所在地:</string>
+    <string name="special_function">特别功能</string>
+    <string name="black_user_list">拉入黑名单</string>
+    <string name="black_user_toast">将用户列入黑名单之后，他/她将无法看到你的动态，无法给你发消息和画画，确定吗？</string>
+    <string name="delete_black">解除黑名单</string>
+    <string name="delete_black_toast">需要将该玩家从黑名单中移除吗？</string>
+    <string name="add_black_friend_success">成功加入黑名单</string>
+    <string name="add_black_friend_fail">加入黑名单失败</string>
+    <string name="delete_black_friend_success">成功解除黑名单</string>
+    <string name="delete_black_friend_fail">解除黑名单失败</string>
+    <string name="manager">管理</string>
+    <string name="charge_gold">金币充值</string>
+    <string name="charge_ingot">元宝充值</string>
+    <string name="add_to_black_user">加入用户黑名单</string>
+    
+    <string name="add_to_black_device">加入设备黑名单</string>
+    <string name="delete_from_black_user">从用户黑名单解禁</string>
+    <string name="delete_from_black_device">从设备黑名单解禁</string>
+    <string name="add_to_black_user_toast">确定将该用户加入黑名单?</string>
+    <string name="add_to_black_device_toast">确定将该用户加入黑名单?</string>
+    <string name="delete_from_black_user_toast">确定将该用户从黑名单中解除?</string>
+    <string name="delete_from_black_device_toast">确定将该设备从黑名单中解除?</string>
+    
+    <string name="setting">设置</string>
+    <string name="save">保存</string>
+    <string name="personalized_signature">个性化签名</string>
+    <string name="privacy">隐私</string>
+    <string name="custom_background">自定义背景</string>
+    <string name="show_to_all">所有人可见</string>
+    <string name="show_to_none">所有人不可见</string>
+    <string name="show_to_follow">仅对相互关注好友可见</string>
+    <string name="choose_guess_language">选择猜词语言</string>
+    <string name="word_manager">词库管理</string>
+    <string name="music">音乐</string>
+    <string name="background_music">背景音乐</string>
+    
+    <string name="gold">金币:</string>
+    <string name="ingot">元宝:</string>
+    <string name="user_id">userId:</string>
+    <string name="charge_gold_hint">请输入要充值的金币数</string>
+    <string name="charge_ingot_hint">请输入要充值的元宝数</string>
+    
+    
+    <!--timeline  -->
+    <string name="guess_user_draw_my_draw">正在猜我的画</string>
+    <string name="guess_right_desc_my_draw">猜对了我画的 %s。</string>
+    <string name="guess_right_desc_no_word_my_draw">猜对了我的画。</string>
+    <string name="guess_right_desc_no_word">猜对了%s的画。</string>
+    <string name="draw_desc_no_word">画了一幅画。</string>
+    <string name="draw_to_somebody_no_word">画了一幅画给%s。</string>
+    <string name="try_guess_desc_my_draw">尝试去猜了我画的 %s。</string>
+    <string name="try_guess_desc_no_word">尝试去猜了%s的画。</string>
+    <string name="give_flower_to_me">给我赠送了一朵鲜花!</string>
+    <string name="give_tomato_to_me">给我丢了个番茄!</string>
+    <string name="chose_action">请选择您的操作</string>
+    <string name="check_opus">查看原作品</string>
+    
+    
+    <!-- draw detail -->
+    <string name="draw_detail">猜画详情</string>
+    <string name="guess">猜画</string>
+    <string name="flower">鲜花</string>
+    <string name="tomato">番茄</string>
+    <string name="draw_to">画给</string>
+    <string name="comment_reply">回复</string>
+    <string name="give_flower">给作者赠送了一朵鲜花!</string>
+    <string name="give_tomato">向作者丢了个番茄!</string>
+    <string name="reply_my_comment">回复我的评论:</string>
+    <string name="reply_my_action">回复我的表态:</string>
+    <string name="comment_my_draw">评论我的画:</string>
+    <string name="give_flower_toast">您花费了40金币给作者送了朵鲜花，让TA额外增加了5点经验，3个金币</string>
+    <string name="give_tomato_toast">您花费了40金币给作者扔了个番茄，让TA额外扣了5点经验，3个金币</string>
+    <string name="too_many_action">不能在同一个作品上使用超过10次相同的道具</string>
+    <string name="sina_weibo">新浪微博</string>
+    <string name="qq_weibo">腾讯微博</string>
+    <string name="facebook">Facebook</string>
+    <string name="wechat">微信好友</string>
+    <string name="wechat_friend">微信朋友圈</string>
+    <string name="email">邮件</string>
+    <string name="gallery">相册</string>
+    <string name="favorite">保存</string>
+    
+    
+    <!-- draw home friend -->
+    <string name="draw_home_friend">我的好友</string>
+    <string name="follow">关注</string>
+    <string name="un_follow">取消关注</string>
+    <string name="fans">粉丝</string>
+    <string name="search_friend">搜索用户</string>
+    <string name="invite_friend">邀请好友</string>
+    <string name="guess_with_ta">和TA一起玩猜猜画画</string>
+    <string name="draw_to_ta">画幅画给TA</string>
+    <string name="opus_of_ta">TA的作品</string>
+    <string name="da_ge_shan">搭个讪</string>
+    <string name="followed">已关注</string>
+    <string name="choose_invite_way">请选择邀请方式</string>
+    <string name="invite_by_message">短信邀请</string>
+    <string name="invite_by_weixin">微信邀请</string>
+    <string name="cancel">取消</string>
+    <string name="invite_message">我正在玩猜猜画画，快一起来玩吧，下载地址是。。。。。。。</string>
+    
+    <!-- draw home chat  -->
+    <string name="chat">聊天</string>
+    <string name="create">创建</string>
+    <string name="select_friend">选择好友</string>
+    <string name="empty_message_toast">不能发送空的消息</string>
+    
+    
+    <!-- draw home opus -->
+    <string name="clear">清空</string>
+    <string name="mine">我的</string>
+    <string name="all">所有</string>
+    <string name="draft">草稿</string>
+    <string name="have_no_opus">你好没有任何作品</string>
+    <string name="opus_title">作品分享</string>
+    <string name="share_opus_tips">分享作品可获10金币</string>
+    
+    <!-- search friend  -->
+    <string name="search">搜索</string>
+    <string name="search_hint">用户昵称/微博昵称/邮件地址</string>
+    
+    <!-- feedback -->
+    <string name="feedback">反馈</string>
+    <string name="feedback_share_to_friend">分享给好友（+10金币）</string>
+    <string name="feedback_follow_draw_lively_weibo">关注官方微博（+400金币）</string>
+    <string name="submit_new_word">提交新词</string>
+    <string name="report_bug">报告问题</string>
+    <string name="feedback_opinion">反馈意见</string>
+    <string name="recommend_app">应用推荐</string>
+    <string name="update_version">版本升级</string>
+    <string name="give_favorable_comment">给个好评</string>
+    <string name="about_draw_lively">关于我们</string>
+    <string name="draw_lively_qq_group">官方Q群:228119679</string>
+    <string name="draw_lively_qq_number">228119679</string>
+    <string name="is_not_phone">你的设备不是手机，不能发送短信。</string>
+    <string name="contact_tips">联系方式（EMAIL,QQ,手机等）</string>
+    <string name="submit_tips">欢迎加入猜猜画画玩家QQ群:228119679，关注官方微博@猜猜画画手机版</string>
+    <string name="submit_new_word">提交新词</string>
+    <string name="submit_bug">报告问题</string>
+    <string name="submit_feedback">反馈意见</string>
+    <string name="submit_new_word_tips">词之间用空格或者换行分开，如"大地 中国"</string>
+    
+    <!-- share -->
+    <string name="send_to_weibo">发送微博</string>
+    <string name="un_support_wechat_friend">您的微信客户端版本过低，不支持分享到微信朋友圈，请升级您的微信客户端版本，（4.2以上版本支持）</string>
+    <string name="share_other_to_weibo">我在玩@猜猜画画，快来猜猜这幅画是神马？猜猜画画美图分享#
+        http://itunes.apple.com/cn/app/cai-cai-hua-hua/id513819630?mt=8</string>
+    <string name="share_by_message">短信分享给朋友</string>
+    <string name="share_by_email">通过邮件分享</string>
+    <string name="share_by_sina_weibo">通过新浪微博分享</string>    
+    <string name="share_by_qq_weibo">通过腾讯微博分享</string>
+    
+    
+    
+   <!--shop  -->
+    <string name="props">道具</string>
+    <string name="tools">工具</string>
+    <string name="promotions">促销</string>
+    <string name="balance">余额：</string>
+    <string name="charge">充值</string>
+    <string name="buy">购买</string>
+    <string name="presentation">赠送</string>
+    <string name="my_balance">我的余额：</string>
+    <string name="promo">省</string>
+    <string name="promo_title">促销：</string>
+    <string name="price_title">价格：</string>
+    <string name="desc_title">描述：</string>
+    <string name="no_promo">无优惠</string>
+    
+    <!-- more -->
+    <string name="more">更多</string>
+    <string name="feedback_success">提交反馈成功</string>
+    <string name="feedback_fail">提交反馈失败</string>
+    <string name="feedback_null_toast">请输入反馈内容</string>
+    <string name="feedback_bug_success">提交问题成功</string>
+    <string name="feedback_bug_null_toast">请输入反馈问题</string>
+    <string name="feedback_bug_fail">提交问题失败</string>
+    <string name="submit_new_word_success">提交新词成功</string>
+    <string name="submit_new_word_fail">提交新词失败</string>
+    <string name="submit_new_word_null_toast">请输入要提交的新词</string>
+    <string name="contact_null_toast">请输入你的联系方式</string>
+    <string name="program_by">Program By \n ------------------------</string>
+    <string name="programer">PIPI Peng\nGamy Huang\nXiaoTao\nXiaoKun</string>
+    <string name="copy_right">Copyright©2011-2013 Sunny Orange</string>
+    <string name="designed_by">Designed By</string>
+    <string name="designer">Roy he\nOld13</string>
+    <string name="app_version">App Version :1.0</string>
+    <string name="about_us">关于我们</string>
+    
+    <!-- bbs -->
+	<string name="bbs">论坛</string>
+	<string name="bbs_post_top">置顶</string>
+	<string name="bbs_support">顶</string>
+    <string name="bbs_post_detail">帖子详情</string>
+    <string name="board_manager">版主:</string>
+    <string name="send_post">发送帖子</string>
+	<string name="reward">悬赏</string>
+	<string name="my_post">我的帖子</string>
+	<string name="my_comment">我的评论</string>
+	<string name="feedback_me">回复我:</string>
+	<string name="comment_content_less_toast">回复内容不能少于5个字</string>
+	<string name="post_content_less_toast">帖子内容不能少于5个字</string>
+	<string name="none">无</string>
+	<string name="reward_100">100</string>
+	<string name="reward_300">300</string>
+	<string name="reward_500">500</string>
+	<string name="reward_1000">1000</string>
+	<string name="camera">拍照</string>
+	<string name="take_from_gallery">从相册选择</string>
+	<string name="delete_post_alert_title">确定要删除这个帖子？</string>
+	<string name="black_user">你已经被拉进黑名单，现在无权进行操作</string>
+	<string name="black_device">你的设备已经被拉进黑名单，现在无权进行操作</string>
+	<string name="send_post_success">发帖成功</string>
+	<string name="send_post_fail">发帖失败</string>
+	<string name="send_comment_success">回复成功</string>
+	<string name="send_comment_fail">回复失败</string>
+	<string name="delete_post_success">删帖成功</string>
+	<string name="delete_post_fail">删帖失败</string>
+	<string name="bbs_support_too_many">每个帖子只能顶一次</string>
+	<string name="transfer_post_success">帖子转移成功</string>
+	<string name="transfer_post_fail">帖子转移失败</string>
+	<string name="post_to_top_success">置顶成功</string>
+	<string name="post_to_top_fail">置顶失败</string>
+	<string name="post_un_top_success">置顶已取消</string>
+	<string name="post_un_top_fail">取消置顶失败</string>
+	
+	
+    <!-- error toast -->
+    <string name="http_load_data_fail">获取数据失败,请稍后再试</string>
+    <string name="http_socket_time_out">连接超时,请稍后再试</string>
+    <string name="http_connect_fail">连接失败，请检查网络连接是否正确</string>
+    
+    <!-- user register -->
+    <string name="input_your_email">请输入Email地址</string>
+    <string name="start_playing">开始游戏</string>
+    <string name="login_with_blog">使用微博账号玩</string>
+    <string name="user_exist">对不起，该电子邮件已经被注册。</string>
+    <string name="email_invalid">邮箱格式不正确</string>
+    <string name="email_verified_failed">邮箱验证失败</string>
+    <string name="register_user_failed">注册失败，请重新注册</string>
+    <string name="authorize_failed">授权失败</string>
+    <string name="authorize_succeed">授权成功</string>
+    <string name="authorize_cancel">授权取消</string>
+    
+    <!-- user simple info setting -->
+    <string name="avatar">头像</string>
+    <string name="nick_name">昵称</string>
+    <string name="input_nick_name">请输入你的昵称</string>
+    <string name="nick_name_must_not_empty">昵称不能为空</string>
+    <string name="skip">跳过</string>
+    <string name="submit">提交</string>
+    
+    
+    
+</resources>

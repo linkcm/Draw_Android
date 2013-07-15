@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dip"
+    android:orientation="vertical" >
+    
+       <LinearLayout
+       android:id="@+id/avatarLo"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+	   android:gravity="center"
+       android:orientation="horizontal"
+       android:layout_centerHorizontal="true"
+        >
+
+       <TextView
+           android:id="@+id/avatarTv"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="@string/avatar"
+       />
+       
+       <LinearLayout 
+           android:id="@+id/maleLo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+ 		   android:gravity="center"
+           android:background="@drawable/user_pic_bgselected" >     
+	      <Button
+	           android:id="@+id/maleBtn"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/man1" >
+	       </Button>
+       </LinearLayout>
+
+        <LinearLayout 
+           android:id="@+id/femaleLo"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="10dip"
+           android:layout_marginRight="10dip"
+ 		   android:gravity="center" >
+	       <Button
+	           android:id="@+id/femaleBtn"
+	           android:layout_width="wrap_content"
+	           android:layout_height="wrap_content"
+	           android:background="@drawable/female1" >
+	       </Button>
+       </LinearLayout>
+
+   </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/nickNameLo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@id/avatarLo"
+        android:layout_below="@id/avatarLo"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/nickNameTv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/nick_name" 
+            android:layout_alignBaseline="@+id/nickNameEt">
+        </TextView>
+
+        <EditText
+            android:id="@+id/nickNameEt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:layout_toRightOf="@id/nickNameTv"
+            android:hint="@string/input_nick_name" >
+        </EditText>
+
+        <Button
+            android:id="@+id/submitBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@id/nickNameEt"
+            android:layout_below="@id/nickNameEt"
+            android:text="@string/submit" >
+        </Button>
+
+        <Button
+            android:id="@+id/skipBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/submitBtn"
+            android:layout_below="@id/nickNameEt"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            android:text="@string/skip">
+        </Button>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dip" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dip"
+        android:layout_marginTop="2dip"
+        android:layout_marginLeft="2dip"
+        android:background="@drawable/charge_cell_bg"
+        android:orientation="horizontal" >
+
+        <ImageView
+            android:id="@+id/shop_item_image"
+            android:layout_width="60dip"
+            android:layout_height="60dip"
+            android:layout_marginRight="5dip"
+            android:background="@drawable/item_bound"
+            android:scaleType="fitCenter" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" >
+
+                <TextView
+                    android:id="@+id/shop_item_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/shop_item_tips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/shop_item_name"
+                    android:background="@drawable/item_remaind"
+                    android:visibility="invisible" />
+
+                <ImageView
+                    android:id="@+id/shop_item_price_icon"
+                    android:layout_width="20dip"
+                    android:layout_height="20dip"
+                    android:layout_toLeftOf="@+id/shop_item_price" />
+
+                <TextView
+                    android:id="@+id/shop_item_price"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/shop_item_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textSize="15sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/shop_item_pro_bg"
+        android:layout_width="60dip"
+        android:layout_height="60dip"     
+        android:scaleType="fitXY"
+        android:src="@drawable/item_promotion_bg" 
+        android:visibility="invisible"/> 
+
+</FrameLayout>

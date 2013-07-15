@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bbs_bg"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/bbs_header"
+        style="@style/bbs_header_bar" >
+
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/bbs_back_button" />
+
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:text="@string/comment"
+            android:textColor="@color/white" />
+
+        <Button
+            android:id="@+id/bbs_send_button"
+            android:layout_width="60dip"
+            android:layout_height="30dip"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dip"
+            android:background="@drawable/bbs_create_submit_bg"
+            android:text="@string/send" />
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/bbs_post_comment_content"
+        android:layout_width="match_parent"
+        android:layout_height="150dip"
+        android:layout_marginLeft="10dip"
+        android:layout_marginRight="10dip"
+        android:background="@drawable/bbs_create_input_bg"
+        android:gravity="left|top"
+        android:textSize="15sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip" >
+
+        <ImageButton
+            android:id="@+id/bbs_comment_create_draw_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_marginRight="10dip"
+            android:layout_toLeftOf="@+id/bbs_comment_create_image_button"
+            android:background="@null"
+            android:src="@drawable/bbs_create_draw_button" 
+            />
+
+        <ImageButton
+            android:id="@+id/bbs_comment_create_image_button"
+            android:layout_width="40dip"
+            android:layout_height="40dip"
+            android:layout_alignParentRight="true"
+            android:background="@null"
+            android:src="@drawable/bbs_create_image_button" 
+            />
+    </RelativeLayout>
+
+</LinearLayout>

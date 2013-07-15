@@ -1,0 +1,11 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/top_3_image_group"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal" >
+    <include layout="@layout/photo_gallery_view_item" android:id="@+id/photo_grallery_list_item1" android:layout_weight="1"/>
+    <include layout="@layout/photo_gallery_view_item" android:id="@+id/photo_grallery_list_item2" android:layout_weight="1"/>
+    <include layout="@layout/photo_gallery_view_item" android:id="@+id/photo_grallery_list_item3" android:layout_weight="1"/>        
+</LinearLayout>

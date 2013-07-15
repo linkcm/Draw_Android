@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:orientation="vertical"
+    android:gravity="center">
+    <Button
+        android:id="@+id/bbs_reply_comment_button"
+        android:layout_width="120dip"
+        android:layout_height="38dip"
+        android:text="@string/comment"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bbs_option_bg"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/bbs_post_detail_button"
+        android:layout_width="120dip"
+        android:layout_height="38dip"
+        android:layout_marginTop="4dip"
+        android:layout_marginBottom="4dip"
+        android:textColor="@android:color/white"
+        android:text="@string/bbs_post_detail"
+        android:background="@drawable/bbs_option_bg"
+        android:gravity="center"/>
+    <Button
+        android:id="@+id/cancel_button"
+        android:layout_width="120dip"
+        android:layout_height="38dip"
+        android:text="@string/cancel"
+        android:textColor="@android:color/white"
+        android:background="@drawable/bbs_option_bg"
+        android:gravity="center"/>
+</LinearLayout>

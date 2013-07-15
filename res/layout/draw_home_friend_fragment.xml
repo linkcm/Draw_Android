@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/draw_room_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        style="@style/header_bar" >
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:text="@string/draw_home_friend" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/header_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/friend_search_layout"
+        android:layout_below="@id/header_bar"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/paper"
+        android:orientation="vertical" >
+        <RadioGroup
+            android:id="@+id/draw_home_friend_header_tab_group"
+            android:layout_width="180dp"
+            android:layout_height="35dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="18dp"
+            android:orientation="horizontal" >
+            <RadioButton
+                android:id="@+id/draw_home_friend_my_follow_button"
+                style="@style/draw_home_top_radio_button"
+                android:background="@drawable/top_draw_left_button"
+                android:checked="true"
+                android:text="@string/follow" />
+            <RadioButton
+                android:id="@+id/draw_home_friend_my_fans_button"
+                style="@style/draw_home_top_radio_button"
+                android:background="@drawable/top_draw_right_button"
+                android:text="@string/fans" />
+        </RadioGroup>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal" >
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/draw_home_friend_my_follow_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:dividerHeight="1dp"
+                android:divider="@android:color/darker_gray"
+                ptr:ptrAnimationStyle="flip" />
+            <com.handmark.pulltorefresh.library.PullToRefreshListView
+                xmlns:ptr="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/draw_home_friend_my_fans_list_view"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="@android:color/darker_gray"
+                android:dividerHeight="1dp"
+                android:visibility="gone"
+                ptr:ptrAnimationStyle="flip" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/friend_search_layout"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+            <Button
+                android:id="@+id/draw_home_friend_search_friend_button"
+                style="@style/wood_button"
+                android:text="@string/search_friend" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center" >
+            <Button
+                android:id="@+id/draw_home_friend_invite_friend_button"
+                style="@style/wood_button"
+                android:text="@string/invite_friend" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RelativeLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bbs_bg">
+    <RelativeLayout
+        android:id="@+id/bbs_header"
+        style="@style/bbs_header_bar"
+        android:layout_alignParentTop="true">
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/bbs_back_button" />
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:textColor="@color/white"
+            android:text="@string/bbs_post_detail"/>
+        <ImageButton
+            android:id="@+id/bbs_refresh_button"
+            style="@style/bbs_header_bar_right_button"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:src="@drawable/bbs_refresh"/>
+    </RelativeLayout>
+    
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/bbs_post_detail_comment_lv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/bbs_header"
+            android:layout_above="@+id/bbs_action_group"
+            android:footerDividersEnabled="false"
+            android:headerDividersEnabled="false"
+            android:dividerHeight="10dip"
+            android:divider="@null"
+            android:layout_marginTop="10dip"
+            android:layout_marginLeft="10dip"
+            android:layout_marginRight="10dip"
+            ptr:ptrAnimationStyle="flip" 
+            android:listSelector="@android:color/transparent"
+            />
+ 
+     <LinearLayout
+         android:id="@+id/bbs_action_group"
+         android:layout_width="match_parent"
+         android:layout_height="50dip"
+         android:orientation="horizontal"
+         android:layout_alignParentBottom="true"
+         android:background="@drawable/bbs_detail_toolbar">
+        <ImageButton
+            android:id="@+id/bbs_post_comment_action_button"
+            style="@style/bbs_post_tool_button"
+            android:src="@drawable/bbs_post_detail_comment"/>
+        <ImageButton
+            android:id="@+id/bbs_post_support_action_button"
+            style="@style/bbs_post_tool_button"
+            android:src="@drawable/bbs_post_detail_support"/>
+        <ImageButton
+            android:id="@+id/bbs_post_delete_action_button"
+            style="@style/bbs_post_tool_button"
+            android:src="@drawable/bbs_post_detail_delete"/>
+        <ImageButton
+            android:id="@+id/bbs_post_transfer_action_button"
+            style="@style/bbs_post_tool_button"
+            android:src="@drawable/bbs_post_detail_transfer"/>
+        <ImageButton
+            android:id="@+id/bbs_post_top_action_button"
+            style="@style/bbs_post_tool_button"
+            android:src="@drawable/bbs_post_detail_totop"/>
+        </LinearLayout>       
+</RelativeLayout>

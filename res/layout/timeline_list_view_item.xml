@@ -1,0 +1,100 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="1dp"
+    android:background="@android:color/transparent"
+    android:orientation="horizontal"
+    android:paddingTop="3dp"
+    android:paddingBottom="3dp" >
+    <LinearLayout
+        android:id="@+id/user_image_view_group"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"        
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp" >
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/user_image_view_group"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="5dp">
+    
+	    <RelativeLayout
+	    	android:id="@+id/feed_list_item_right_top"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true">
+    
+	        <TextView
+	            android:id="@+id/user_nick_name"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentTop="true"
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/user_draw_picture"
+	            android:layout_gravity="bottom"
+	            android:gravity="left"
+	            android:singleLine="true"
+	            android:textColor="@android:color/black"
+	            android:textSize="16sp" />
+	        <TextView
+	            android:id="@+id/timeline_content"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/user_nick_name"
+	            android:layout_alignParentLeft="true"
+	            android:layout_toLeftOf="@+id/user_draw_picture"	            
+	            android:layout_gravity="bottom"
+	            android:layout_marginTop="5dp"
+	            android:layout_marginBottom="5dp"
+	            android:gravity="left"
+	            android:textSize="14sp" />
+		    
+		    <ImageView
+		            android:id="@+id/user_draw_picture"
+		            android:layout_width="100dp"
+		            android:layout_height="100dp"
+		            android:layout_alignParentRight="true"
+		            android:scaleType="fitXY" />
+		    <TextView
+	            android:id="@+id/timeline_feed_time"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_alignParentLeft="true"
+	            android:layout_below="@id/user_draw_picture"
+	            android:gravity="left"
+	            android:singleLine="true"
+	            android:textSize="12sp" />
+		     <TextView
+	            android:id="@+id/user_guessed"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/user_draw_picture"
+	            android:layout_alignLeft="@id/user_draw_picture"
+	            android:gravity="left"
+	            android:singleLine="true"
+	            android:textSize="12sp" />
+	        <TextView
+	            android:id="@+id/user_guess_correct"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/user_draw_picture"
+	            android:layout_alignRight="@id/user_draw_picture"
+	            android:gravity="right"
+	            android:singleLine="true"
+	            android:textSize="12sp" />
+	    
+	    </RelativeLayout>
+	    
+	    
+	    
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bottom_menubg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        style="@style/header_bar" >
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:id="@+id/title_text"
+            android:text="@string/send_to_weibo"/>
+        <Button
+            android:id="@+id/send_button"
+            style="@style/right_yellow_button"
+            android:text="@string/send_to_weibo"
+            android:textColor="@android:color/white"/>
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/message_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/header_bar"  
+        android:orientation="horizontal" >
+        <EditText
+            android:id="@+id/share_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:textSize="14sp"
+            android:maxLength="140"/>         
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/picture_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/message_group"  
+        android:orientation="horizontal"
+        android:background="@drawable/dark_wood_bg" >
+        <ImageView
+            android:id="@+id/opus_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:padding="20dp"
+            android:scaleType="fitXY"
+            android:background="@android:color/white"/>         
+    </LinearLayout>
+</RelativeLayout>

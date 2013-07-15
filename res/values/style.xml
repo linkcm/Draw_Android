@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    
+    
+    <!--  <style name="MyTheme.NoTitleBar.CustomBackground" parent="@android:style/Theme.Light.NoTitleBar">  
+        <item name="android:windowBackground">@drawable/default_cn</item>  
+        <item name="android:windowNoTitle">true</item>  
+        <item name="android:windowFullscreen">true</item>  
+        <item name="android:windowContentOverlay">@null</item>  
+ </style>  -->
+    
+    
+    <style name="footbar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">@dimen/text_size_10</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:ellipsize">marquee</item>
+        <item name="android:gravity">center</item>  
+        <item name="android:button">@null</item>  
+        <item name="android:paddingTop">@dimen/space_1</item>
+        <item name="android:paddingBottom">@dimen/space_3</item>
+    </style>
+	<style name="main_footbar_radio" parent="footbar">
+        <item name="android:padding">0dp</item>
+    </style>
+    
+	<style name="header_bar">
+	    <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">60dp</item>
+        <item name="android:background">@drawable/topwood</item>
+	</style>
+	
+	<style name="bbs_header_bar">
+	    <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">60dp</item>
+	</style>
+	
+	
+	<style name="bbs_back_button">
+		<item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">30dip</item>
+		<item name="android:src">@drawable/bbs_back</item>
+		<item name="android:background">@null</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:scaleType">fitStart</item>
+		<item name="android:layout_marginLeft">10dp</item>
+	</style>
+	
+	<style name="bbs_header_bar_right_button">
+	    <item name="android:layout_width">50dip</item>
+        <item name="android:layout_height">50dip</item>
+		<item name="android:background">@null</item>
+		<item name="android:layout_centerVertical">true</item>
+	</style>
+	
+	<style name="back_button">
+		<item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+		<item name="android:src">@drawable/back_button</item>
+		<item name="android:background">@null</item>
+		<item name="android:layout_alignParentLeft">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:layout_marginLeft">10dp</item>
+	</style>
+	
+	<style name="header_bar_right_button">
+		<item name="android:layout_width">60dip</item>
+        <item name="android:layout_height">38dip</item>
+        <item name="android:layout_marginRight">5dp</item>
+		<item name="android:background">@drawable/wood_button</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_centerVertical">true</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@android:color/black</item>		
+	</style>
+	
+	
+	
+	
+	<style name="right_yellow_button">
+	    <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">10dp</item>
+		<item name="android:background">@drawable/yellow_button</item>
+		<item name="android:layout_alignParentRight">true</item>
+		<item name="android:layout_centerVertical">true</item>	
+	</style>	
+	
+	<style name="header_bar_title_text_view">
+		<item name="android:layout_width">200dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:singleLine">true</item>
+		<item name="android:layout_centerInParent">true</item>
+		<item name="android:id">@+id/title_text</item>
+		<item name="android:textSize">18sp</item>
+		<item name="android:gravity">center</item>
+		<item name="android:textColor">@android:color/black</item>
+	</style>
+	
+	<style name="control_view_group">
+	    <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">fill_parent</item>
+        <item name="android:layout_weight">1</item>
+	    <item name="android:orientation">vertical</item>
+	    <item name="android:gravity">center</item>
+	</style>
+	
+	<style name="home_menu_button_style">
+	    <item name="android:background">@null</item>
+	    <item name="android:gravity">center</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:layout_centerVertical">true</item>
+	</style>
+	
+	<style name="home_menu_button_text_style">
+	    <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_centerHorizontal">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@color/user_name_color</item>
+	</style>	
+	
+	<style name="home_menu_button_badge_style">
+	    <item name="android:background">@drawable/common_home_badge</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">@android:color/black</item>
+	</style>
+	
+	
+	<style name="draw_detail_footer_bar_image_button">
+	    <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:background">@null</item>
+	</style>    
+	
+	<style name="draw_detail_tab_item">
+	    <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/draw_detail_tab_text_view</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+	<style name="draw_home_top_radio_button">
+	    <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@drawable/tab_text_view</item>
+        <item name="android:button">@null</item>
+        <item name="android:gravity">center</item>
+	</style>
+	
+	<!-- <style name="draw_home_friend_green_button">
+	    <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/tab_green_button</item>
+        <item name="android:gravity">center</item>
+	</style>
+	 -->
+	 
+	 <style name="wood_button">
+	    <item name="android:layout_width">120dp</item>
+        <item name="android:layout_height">35dp</item>
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:background">@drawable/wood_button</item>
+        <item name="android:gravity">center</item>
+	</style>
+	
+	 
+	<style name="draw_home_friend_detial_dialog_text">
+	    <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:gravity">center|left</item> 
+	</style>
+	<style name="draw_home_friend_detial_dialog_button">
+	    <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/wood_button</item>
+        <item name="android:textColor">@android:color/black</item>
+        <item name="android:gravity">center</item>
+	</style>
+	
+	<style name="sns_icon">
+	    <item name="android:layout_width">20dp</item>
+	    <item name="android:layout_height">20dp</item>
+	    <item name="android:layout_marginRight">2dp</item>
+	    <item name="android:scaleType">fitXY</item>
+	    <item name="android:visibility">gone</item>
+	</style>
+	
+	
+	<style name="ActivityAnim" parent="@android:style/Theme.Light.NoTitleBar">  
+		<item name="android:windowAnimationStyle">@style/AnimationActivity</item>  
+	</style>
+	
+	<style name="AnimationActivity" parent="@android:style/Animation.Activity" >  
+		<item name="android:activityOpenEnterAnimation">@anim/anim_left_enter</item>  
+		<item name="android:activityOpenExitAnimation">@anim/anim_left_exit</item>    
+		<item name="android:activityCloseEnterAnimation">@anim/anim_right_enter</item>  
+		<item name="android:activityCloseExitAnimation">@anim/anim_right_exit</item>  
+		 <item name="android:taskOpenEnterAnimation">@anim/anim_left_enter</item>
+	    <item name="android:taskOpenExitAnimation">@anim/anim_left_exit</item>
+	    <item name="android:taskCloseEnterAnimation">@anim/anim_right_enter</item>
+	    <item name="android:taskCloseExitAnimation">@anim/anim_right_exit</item>
+	    <item name="android:taskToFrontEnterAnimation">@anim/anim_left_enter</item>
+	    <item name="android:taskToFrontExitAnimation">@anim/anim_left_exit</item>
+	    <item name="android:taskToBackEnterAnimation">@anim/anim_right_enter</item>
+	    <item name="android:taskToBackExitAnimation">@anim/anim_right_exit</item>
+  </style>
+	
+	<style name="noAnimation">
+	    <item name="android:activityOpenEnterAnimation">@null</item>
+	    <item name="android:activityOpenExitAnimation">@null</item>
+	    <item name="android:activityCloseEnterAnimation">@null</item>
+	    <item name="android:activityCloseExitAnimation">@null</item>
+	    <item name="android:taskOpenEnterAnimation">@null</item>
+	    <item name="android:taskOpenExitAnimation">@null</item>
+	    <item name="android:taskCloseEnterAnimation">@null</item>
+	    <item name="android:taskCloseExitAnimation">@null</item>
+	    <item name="android:taskToFrontEnterAnimation">@null</item>
+	    <item name="android:taskToFrontExitAnimation">@null</item>
+	    <item name="android:taskToBackEnterAnimation">@null</item>
+	    <item name="android:taskToBackExitAnimation">@null</item>
+	</style>
+
+	
+	<style name="user_detail_sns_btn">
+	    <item name="android:layout_width">40dip</item>
+	    <item name="android:layout_height">40dip</item>
+	    <item name="android:background">@null</item>
+	</style>
+	
+	<style name="user_detail_color_btn">
+	    <item name="android:layout_width">60dip</item>
+	    <item name="android:layout_height">60dip</item>
+	    <item name="android:background">@null</item>
+	    <item name="android:layout_centerHorizontal">true</item>
+	    <item name="android:layout_alignParentBottom">true</item>
+	    <item name="android:paddingBottom">12dip</item>
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:gravity">bottom|center_horizontal</item>
+	</style>
+	
+	<style name="user_detail_basic_info">
+	    <item name="android:layout_width">100dip</item>
+	    <item name="android:layout_height">wrap_content</item>
+	    <item name="android:textSize">14sp</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textColor">@android:color/white</item>
+	</style>    
+	
+	
+	<style name="bbs_post_detail_radio_button">
+	    <item name="android:layout_width">80dip</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@drawable/bbs_detail_tab_text_view</item>
+        <item name="android:background">@null</item>
+        <item name="android:button">@null</item>
+    </style>
+    
+	<style name="bbs_post_tool_button">
+	    <item name="android:layout_width">0dip</item>
+	    <item name="android:layout_height">match_parent</item>
+	    <item name="android:layout_weight">1</item>
+	    <item name="android:scaleType">center</item>  
+	    <item name="android:background">@null</item>
+	    <item name="android:visibility">gone</item>
+	</style>
+	
+	
+	<style name="bbs_reward_button">
+	    <item name="android:layout_width">50dip</item>
+	    <item name="android:layout_height">28dip</item>
+	    <item name="android:background">@drawable/bbs_option_bg</item>
+	    <item name="android:layout_marginRight">4dip</item>
+	    <item name="android:layout_marginLeft">4dip</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textColor">@android:color/white</item>
+	</style>
+	
+	<style name="bbs_option_button">
+	    <item name="android:layout_width">120dip</item>
+	    <item name="android:layout_height">38dip</item>
+	    <item name="android:background">@drawable/bbs_option_bg</item>
+	    <item name="android:layout_marginRight">4dip</item>
+	    <item name="android:layout_marginLeft">4dip</item>
+	    <item name="android:gravity">center</item>
+	    <item name="android:textColor">@android:color/white</item>
+	</style>
+</resources>

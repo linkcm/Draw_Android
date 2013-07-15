@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/user_detail_group"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/user_detail_bg"
+    android:orientation="vertical" >  
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:scrollbars="none">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" 
+                android:layout_marginTop="10dip">
+                <RelativeLayout
+                    android:id="@+id/user_detail_info_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip">               
+                        <ImageView
+                            android:id="@+id/user_gender"
+                            android:layout_width="20dip"
+                            android:layout_height="20dip"
+                            android:layout_alignParentTop="true"
+                            android:layout_toLeftOf="@+id/user_nick_name"
+                            android:scaleType="fitCenter" />
+                        <TextView
+                            android:id="@+id/user_nick_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:layout_centerHorizontal="true"
+                            android:gravity="center"
+                            android:singleLine="true"
+                            android:maxWidth="150dip"
+                            android:textSize="18sp" />
+                        <TextView
+                            android:id="@+id/user_level"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@+id/user_nick_name"
+                            android:layout_centerHorizontal="true"
+                            android:textSize="15sp" />
+                        <Button
+                            android:id="@+id/user_detail_edit"
+                            android:layout_width="49dip"
+                            android:layout_height="37dip"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="10dip"
+                            android:background="@drawable/user_detail_edit" />
+                        <ImageView
+                            android:id="@+id/user_detail_pull_dwon"
+                            android:layout_width="30dip"
+                            android:layout_height="30dip"
+                            android:layout_alignParentBottom="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginBottom="10dip"
+                            android:layout_marginRight="10dip"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/user_detail_pull_down" />
+                    
+                </RelativeLayout>
+                 
+                <RelativeLayout
+                    android:id="@+id/user_detail_btn_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_below="@+id/user_detail_info_group" >
+                    <Button
+                        android:id="@+id/user_detail_yellow_button"
+                        style="@style/user_detail_color_btn"
+                        android:layout_marginBottom="20dip"
+                        android:layout_marginLeft="30dip"
+                        android:layout_marginRight="30dip"
+                        android:background="@drawable/user_detail_yellow_btn" />
+                    <Button
+                        android:id="@+id/user_detail_red_button"
+                        style="@style/user_detail_color_btn"
+                        android:layout_marginBottom="50dip"  
+                        android:layout_toLeftOf="@+id/user_detail_yellow_button"
+                        android:background="@drawable/user_detail_red_btn" />
+                    <Button
+                        android:id="@+id/user_detail_purple_button"
+                        style="@style/user_detail_color_btn"
+                        android:layout_marginBottom="50dip"
+                        android:layout_toRightOf="@+id/user_detail_yellow_button"
+                        android:background="@drawable/user_detail_purple_btn" />
+                    <Button
+                        android:id="@+id/user_detail_follow_button"
+                        style="@style/user_detail_color_btn"
+                        android:layout_marginBottom="120dip"
+                        android:layout_marginRight="40dip"
+                        android:layout_toLeftOf="@+id/user_detail_yellow_button"
+                        android:background="@drawable/user_detail_common_btn"                 
+                        />
+                    <Button
+                        android:id="@+id/user_detail_fans_button"
+                        style="@style/user_detail_color_btn"
+                        android:layout_marginBottom="120dip"
+                        android:layout_marginLeft="40dip"
+                        android:layout_toRightOf="@+id/user_detail_yellow_button"
+                        android:background="@drawable/user_detail_common_btn" />
+                </RelativeLayout>
+               <LinearLayout
+                    android:id="@+id/user_detail_basic_info_group"
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:visibility="gone"
+                    android:background="@drawable/user_detail_basic_bg"
+                    android:layout_below="@+id/user_detail_info_group" 
+                    android:orientation="vertical"
+                    android:gravity="center_horizontal|bottom">
+                    <TextView
+                        android:id="@+id/user_detail_birthday"
+                        style="@style/user_detail_basic_info"/>
+                    <TextView
+                        android:id="@+id/user_detail_constellation"
+                        style="@style/user_detail_basic_info"/>
+                    <TextView
+                        android:id="@+id/user_detail_blood_type"
+                        style="@style/user_detail_basic_info"/>
+                    <TextView
+                        android:id="@+id/user_detail_location"
+                        style="@style/user_detail_basic_info"/>
+               </LinearLayout>
+               <ImageView
+                    android:id="@+id/user_avatar"
+                    android:layout_width="200dip"
+                    android:layout_height="200dip"
+                    android:layout_centerInParent="true"
+                    android:background="@drawable/user_detail_round_avatar_bg"       
+                    android:scaleType="fitCenter"
+                     />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="2dip"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY" 
+                    android:src="@drawable/user_detail_seperator_line1"/>
+                <RadioGroup
+                    android:id="@+id/user_detail_radio_btn_group"
+                    android:layout_width="150dip"
+                    android:layout_height="35dip"
+                    android:layout_centerInParent="true"
+                    android:orientation="horizontal" >
+                    <RadioButton
+                        android:id="@+id/user_detail_opus"
+                        style="@style/draw_home_top_radio_button"
+                        android:background="@drawable/top_draw_left_button"
+                        android:checked="true"
+                        android:text="@string/opus" />
+                    <RadioButton
+                        android:id="@+id/user_detail_favorite"
+                        style="@style/draw_home_top_radio_button"
+                        android:background="@drawable/top_draw_right_button"
+                        android:text="@string/collect" />
+                </RadioGroup>
+                <TextView
+                    android:id="@+id/user_detail_opus_group_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:visibility="gone"
+                    android:text="@string/opus"
+                    android:textSize="15sp"/>
+                <Button
+                    android:layout_width="30dip"
+                    android:layout_height="30dip"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="10dip"
+                    android:background="@drawable/user_detail_more" />
+            </RelativeLayout>
+            <RelativeLayout                
+                android:layout_width="match_parent"
+                android:layout_height="200dip" >
+                <HorizontalScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dip" 
+                    android:scrollbars="none">
+                    <LinearLayout
+                        android:id="@+id/user_detail_opus_group"
+                        android:layout_width="wrap_content"
+                        android:layout_height="200dip"
+                        android:orientation="horizontal" 
+                        android:gravity="center">
+                    </LinearLayout>
+                </HorizontalScrollView>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_detail_seperator_line1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/sns_account"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="100dip" 
+                android:gravity="center"
+                android:orientation="horizontal">
+                <ImageButton
+                    android:id="@+id/user_detail_sina_weibo"
+                    style="@style/user_detail_sns_btn"
+                    android:src="@drawable/sina_weibo_btn"/>
+                <ImageButton
+                    android:id="@+id/user_detail_qq_weibo"
+                    style="@style/user_detail_sns_btn"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:src="@drawable/qq_weibo_btn"/>
+                <ImageButton
+                    style="@style/user_detail_sns_btn"
+                    android:id="@+id/user_detail_facebook"                   
+                    android:src="@drawable/facebook_btn"/>
+            </LinearLayout>
+            <RelativeLayout
+                android:id="@+id/special_function_seperator_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" >
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/user_detail_seperator_line1" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="@string/special_function"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/special_function_group"
+                android:layout_width="match_parent"
+                android:layout_height="100dip" 
+                android:gravity="center|right"
+                android:orientation="horizontal">
+                <Button
+                    android:id="@+id/black_user_list_btn"
+                    style="@style/wood_button"
+                    android:text="@string/black_user_list"/>
+                <Button
+                    android:id="@+id/delete_black_btn"
+                    style="@style/wood_button"
+                    android:text="@string/delete_black"
+                    android:visibility="gone"/>             
+                <Button
+                    android:id="@+id/user_manager_btn"
+                    style="@style/wood_button"
+                    android:layout_marginLeft="20dip"
+                    android:layout_marginRight="20dip"
+                    android:text="@string/manager"/>
+             
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        <Button
+            android:id="@+id/back_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dip"
+            android:layout_marginTop="10dip"
+            android:background="@drawable/back_button" />
+    </LinearLayout>
+</FrameLayout>

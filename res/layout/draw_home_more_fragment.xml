@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/draw_room_bg"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        style="@style/header_bar" >
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:text="@string/more" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/header_tab_bar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_bar"
+        android:layout_marginBottom="-5dp"
+        android:background="@drawable/draw_room_bg"
+        android:layout_marginTop="20dip"
+        android:orientation="vertical" >
+        	<ListView
+        	    android:id="@+id/draw_home_more_list"
+        	    android:layout_width="match_parent"
+        	    android:layout_height="wrap_content"
+        	    android:layout_alignParentTop="true"
+        	    android:layout_marginLeft="20dip"
+        	    android:layout_marginRight="20dip"
+        	    android:dividerHeight="2dp"
+        	    android:divider="@drawable/all_my_words_seprator"
+        	    android:background="@color/half_transparent_white"
+        	    android:layout_above="@+id/draw_lively_qq_group"
+        	    />
+            <TextView
+                android:id="@+id/draw_lively_qq_group"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+               	android:layout_alignParentBottom="true"
+               	android:layout_marginBottom="20dip"
+                android:padding="5dp"
+                android:gravity="center"
+                android:text="@string/draw_lively_qq_group"/>
+    </RelativeLayout>
+</RelativeLayout>

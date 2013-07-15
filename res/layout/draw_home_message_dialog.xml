@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/white"
+    android:orientation="vertical" >
+    <RelativeLayout
+        android:id="@+id/header_bar"
+        style="@style/header_bar" >
+        <ImageButton
+            android:id="@+id/back_button"
+            style="@style/back_button" />
+        <TextView
+            style="@style/header_bar_title_text_view"
+            android:id="@+id/title_text"/>
+        <ImageButton
+            android:id="@+id/refresh_button"
+            style="@style/header_bar_right_button"
+            android:src="@drawable/refresh_button" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/message_dialog_group"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/send_group"
+        android:layout_below="@id/header_bar"  
+        android:orientation="horizontal" >
+      
+        <com.handmark.pulltorefresh.library.PullToRefreshListView
+            xmlns:ptr="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/draw_home_message_dialog_list_view"
+            android:layout_marginTop="5dp"
+            android:dividerHeight="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:divider="@android:color/transparent"
+            android:listSelector="@android:color/transparent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            ptr:ptrAnimationStyle="flip" />          
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/send_group"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@android:color/darker_gray" 
+        android:padding="5dp">
+        <ImageButton
+            android:id="@+id/message_graphic_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:scaleType="fitCenter"
+            android:src="@drawable/send_message_button"
+            android:background="@null" />
+        <EditText
+            android:id="@+id/message_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textSize="14sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_toLeftOf="@+id/message_send_button"
+            android:layout_toRightOf="@+id/message_graphic_button"
+            android:background="@drawable/inputbg" />
+        <Button 
+            android:id="@+id/message_send_button"
+            android:layout_alignParentRight="true"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/wood_button"
+            android:layout_centerVertical="true"
+            android:text="@string/send"
+            android:textColor="@android:color/black"/>
+    </RelativeLayout>
+</RelativeLayout>
